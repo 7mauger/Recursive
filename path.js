@@ -11,7 +11,7 @@ function buildPath(p,n){
     }
   }
   path[x] = true;
-  return path[x];
+  return path;
 }
 
 function stroll(path,index){
@@ -27,10 +27,10 @@ function stroll(path,index){
 }
 
 function rsj(path,index){
-  if(index == path-1){
+  if(index == path.length-1){
     return 1;
   }
-  else if(index > path-1){
+  else if(index > path.length-1){
     return 0;
   }
   else{
